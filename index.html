@@ -14,21 +14,21 @@
     <div class="max-length">
       <h1>Send us a sweet little note</h1>
 
-      <form class="push-0">
+      <form class="push-0" method="POST" action="https://formspree.io/bradlet">
 
         <div class="push">
           <label for="name">Name</label>
-          <input id="name" required>
+          <input id="name" name="name" required>
         </div>
 
         <div class="push">
           <label for="email">Your email</label>
-          <input id="email" type="email" placeholder="me@me.com" required>
+          <input id="email" type="email" placeholder="me@me.com" name="email" required>
         </div>
 
         <div class="push">
           <label for="subject">Subject</label>
-          <select id="subject">
+          <select id="subject" name="_subject">
             <option>Get a quote!</option>
             <option>General question</option>
             <option>Just to talk</option>
@@ -37,7 +37,7 @@
 
             <div class="push">
               <label for="details">What's up?</label>
-              <textarea id="details" required></textarea>
+              <textarea id="details" name="message" required></textarea>
             </div>
 
             <div>
